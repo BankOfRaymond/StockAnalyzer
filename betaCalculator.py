@@ -1,6 +1,7 @@
 
 #This will calculate the BETA given a list of EOD data
 
+
 AAPL = [1.0,2.0,3.0] #,4,5,6,7,8,9,10]
 SNP  = [8.0,2.0,3.0]
 
