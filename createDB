@@ -1,0 +1,22 @@
+CREATE DATABASE Finance;
+
+CREATE TABLE stockPrices(
+
+	priceDateID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	stockID INT NOT NULL,
+	date DATE NOT NULL,
+	openPrice FLOAT(7,2),
+	highPrice FLOAT(7,2),
+	lowPrice  FLOAT(7,2),
+	closePrice FLOAT(7,2),
+	volume  BIGINT,
+	adjClose FLOAT(7,2)
+
+);
+
+CREATE TABLE stockList(
+	stockID  	INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	symbol   	VARCHAR(10),
+	name VARCHAR(30),
+	exchange VARCHAR(10)
+);
