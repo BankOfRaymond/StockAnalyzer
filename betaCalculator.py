@@ -3,12 +3,13 @@
 
 
 AAPL = [1.0,2.0,3.0] #,4,5,6,7,8,9,10]
-SNP  = [8.0,2.0,3.0]
+SNP  = [1.0,2.0,3.0]
 
 #Returns list of returns of size n-1
 def getReturns(eodData):
-  dailyReturns = []
-	for i in range(1,len(eodData)):	dailyReturns.append( (eodData[i]-eodData[i-1])/eodData[i-1] )
+	dailyReturns = []
+	for i in range(1,len(eodData)):
+		dailyReturns.append( (eodData[i]-eodData[i-1])/eodData[i-1] )
 	return dailyReturns
 
 #Typically Stock1 is the comparing stock. stock2 is the index, or stock to compare against

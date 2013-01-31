@@ -1,0 +1,1 @@
+#put stock in DB
